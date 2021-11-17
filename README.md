@@ -13,6 +13,7 @@ terraform apply
 ```
 launcha -d vwxyzjn/sb3:latest --build --push --command "python sb3_example.py"
 docker pull vwxyzjn/sb3:latest
+docker run -d -e WANDB_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx vwxyzjn/sb3:latest /bin/bash -c "python sb3_example.py"
 launcha -d vwxyzjn/sb3:latest --build --push \
     --command "python sb3_example.py" \
     --job-queue c5a-large \
@@ -21,3 +22,8 @@ launcha -d vwxyzjn/sb3:latest --build --push \
     --num-hours 48.0 \
     --provider aws
 ```
+
+![1](imgs/1.png)
+![1](imgs/2.png)
+![1](imgs/3.png)
+![1](imgs/4.png)
